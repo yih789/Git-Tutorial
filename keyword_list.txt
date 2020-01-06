@@ -1,0 +1,26 @@
+- 처음 설정
+git config --global
+git config --global user.name yih789
+git config --global user.email yih789@naver.com
+
+- Github에 저장소 생성
+- 컴퓨터에 저장소와 연결할 파일 생성
+- 해당 저장소 주소와 파일을 연결 :
+git clone 저장소 주소
+1. git add 파일이름 or git add .
+2. git commit -m "커밋에 대한 설명"
+3. git push
+
+extra)
+* git status : 깃의 상태 확인
+* git reset 파일이름 : add로 올라간 파일을 취소
+* git restore -- 파일이름 : 수정된 파일의 내용을 반영하지 않고 원래대로
+* git log : 시간별로 커밋 수정내용을 확인
+* git reset --hard 커밋의 번호 : 해당 커밋 이후의 로그를 모두 삭제
+=> git push -f : 강제로 Git에도 동일한 정보를 준다.
+* git commit --amend : commit의 내용을 수정할 때 
+a선택(수정모드) & esc & :wq!(종료)
+* git fetch : git의 내용 불러오기
+* git merge : 충돌 없도록 합병
+* git pull : git fetch + git merge
+
